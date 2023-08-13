@@ -12,12 +12,22 @@
     <title>KALKULATOR WALUT</title>
 </head>
 <body>
-    <div class="converter">
-        <h1>Kalkulator walut</h1>
-        <div class="input-group">
-            <label
-        </div>
+    <div class="currency-converter">
+        <h1>Currency Converter</h1>
+        <input class="currency-converter__input" type="number" id="amount" placeholder="Enter amount">
+        <select class="currency-converter__select" id="fromCurrency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+        </select>
+        <select class="currency-converter__select" id="toCurrency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+        </select>
+        <button onclick="convert()">Convert</button>
+        <p class="currency-converter__output" id="output"></p>
     </div>
-    
 </body>
+
 </html>
